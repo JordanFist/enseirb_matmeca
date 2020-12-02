@@ -1,0 +1,8 @@
+sortie: exo4.3.txt
+commande: ls
+a.out
+exo2.c
+exo3.c
+exo4.c
+feuille3.md
+test.txt

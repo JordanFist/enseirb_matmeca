@@ -1,0 +1,22 @@
+#lang racket
+(require "../src/validity.rkt")
+(require "../src/parser.rkt")
+(require "../src/graph.rkt")
+(define production-line (final-production-line "../src/file-to-parse.txt"))
+production-line
+(define input (ressource " " 0))
+(define output (ressource "Herb" 1))
+(define res1 (ressource "Wheat" 2))
+(define res2 (ressource "Beer" 5))
+(define f (factory input output 3 0))
+(define usine1 (factory res1 res2 1 3))
+(define g ( graph '( (node f f f))))
+(define f1 (factory res1 output 3 0))
+(define node1 (node f1 null null))
+(define noeud (node usine1 node1 null))
+(no-input-ressources? f)
+(enough-gold? production-line 15)
+(is-valid? g production-line 10)
+(can-produce-factory? noeud res1)
+(define val-node (node (factory (ressource "Flour" 3) (ressource "Bread" 5) 2 0) null (list null)))
+

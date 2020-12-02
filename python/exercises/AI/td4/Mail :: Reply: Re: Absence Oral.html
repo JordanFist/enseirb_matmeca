@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta content="IE=EmulateIE10" http-equiv="X-UA-Compatible">
+  <link href="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/mime.css" rel="stylesheet" type="text/css"><link href="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/screen_002.css" rel="stylesheet" type="text/css"><link href="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/screen.css" rel="stylesheet" type="text/css"><link href="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/screen_003.css" rel="stylesheet" type="text/css"><link href="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/mozilla.css" rel="stylesheet" type="text/css">  <link type="image/x-icon" href="https://webmail.enseirb-matmeca.fr/imp/themes/default/graphics/favicon.ico" rel="shortcut icon">    <title>Mail :: Reply: Re: Absence Oral</title>
+ </head>
+
+ <body class="horde-ajax">
+<div style="display:none">
+ <span id="largeaddrspan">
+  <span class="largeaddrtoggle">
+   <span class="largeaddrlist">Show Addresses (%d)</span>
+   <span class="largeaddrlist" style="display:none">Hide Addresses</span>
+  </span>
+  <span class="dispaddrlist" style="display:none">
+   <span class="largeaddrlistlimit" style="display:none">Load All Addresses</span>
+  </span>
+ </span>
+</div>
+
+<div id="dimpLoading" style="display: none;">
+ Loading...</div>
+
+<div id="composeContainer" style="">
+ <form id="compose" name="compose" enctype="multipart/form-data" action="/services/ajax.php/imp/addAttachment" method="post" style="" target="submit_frame">
+ <input id="html" name="html" value="0" type="hidden"> <input id="composeCache" name="composeCache" value="fCt2rnxhAmB3i2xW56UtNw2" type="hidden"> <input id="composeHmac" name="composeHmac" value="c28754ec" type="hidden"> <input id="request_read_receipt" name="request_read_receipt" value="1" type="hidden"> <input id="user" name="user" value="jsandri" type="hidden"> <input id="save_attachments_select" name="save_attachments_select" value="0" type="hidden"> <input id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="2097152" type="hidden"> <input id="vcard_attach" name="vcard_attach" type="hidden">
+ <div class="horde-buttonbar">
+  <div class="iconImg headercloseimg closeImg" id="compose_close" title="Accesskey Esc"></div>
+  <ul>
+   <li class="horde-icon">
+    <a id="send_button" class="dimpactionForward" title="Accesskey Ctrl-Enter">Send</a>   </li>
+   <li class="horde-icon">
+    <a id="draft_button" class="dimpactionDrafts" title="Save as Draft">Save as Draft</a>   </li>
+  </ul>
+ </div>
+
+ <div id="writemsg">
+  <div class="msgwrite">
+   <div class="dimpOptions">
+    <div>
+     <label>
+     <input class="checkbox" id="htmlcheckbox" name="htmlcheckbox" value="1" type="checkbox">HTML composition     </label>
+    </div>
+    <div style="">
+     <label>
+      <input class="checkbox" id="save_sent_mail" name="save_sent_mail" value="1" checked="checked" type="checkbox">Save in      <span id="sent_mail_label" title="Sent">Sent</span>
+     </label>
+     <span class="iconImg horde-popdown" id="save_sent_mail_load"></span>
+     <input id="save_sent_mail_mbox" name="save_sent_mail_mbox" value="U2VudA" type="hidden">    </div>
+    <div>
+     Priority:<span id="priority_label" title="Normal">Normal</span><span class="iconImg horde-popdown"></span>
+     <input id="priority" name="priority" value="normal" type="hidden">    </div>
+    <div>
+     <span id="other_options">
+      <a id="anonymous_element_2">Other Options</a><span class="horde-popdown" id="anonymous_element_3"></span>
+     </span>
+    </div>
+   </div>
+
+   <table>
+    <input id="identity" name="identity" value="0" type="hidden">    <tbody><tr id="sendto">
+     <td class="label">
+      <span class="composeAddrbook">To:</span>
+     </td>
+     <td>
+      <span id="to_loading_img" class="loadingImg" style="display:none"></span>
+      <div class="hordeACBox impACBox"><ul class="hordeACList impACList"><li class="hordeACListItem" title="Nicolas Marie-Magdelaine &lt;nicolas.marie-magdelaine@u-bordeaux.fr&gt;">Nicolas Marie-Magdelaine &lt;nicolas.marie-magdela...<img class="hordeACItemRemove impACItemRemove" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/delete-small.png" style=""></li><li><input autocomplete="off" class="hordeACTrigger impACTrigger" style="width: 80px;"></li></ul><textarea cols="75" id="to" name="to" rows="1" style="display: none;">Nicolas Marie-Magdelaine &lt;nicolas.marie-magdelaine@u-bordeaux.fr&gt;</textarea><img class="hordeACItemRemove impACItemRemove" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/delete-small.png" style="display: none;"></div>     </td>
+    </tr>
+    <tr id="sendcc" style="display:none">
+     <td class="label">
+      <span class="composeAddrbook">Cc:</span>
+     </td>
+     <td>
+      <span id="cc_loading_img" class="loadingImg" style="display:none"></span>
+      <div class="hordeACBox impACBox"><ul class="hordeACList impACList"><li><input autocomplete="off" class="hordeACTrigger impACTrigger" style="width: 80px;"></li></ul><textarea cols="75" id="cc" name="cc" rows="1" style="display: none;"></textarea></div>     </td>
+    </tr>
+    <tr id="sendbcc" style="display:none">
+     <td class="label">
+      <span class="composeAddrbook">Bcc:</span>
+     </td>
+     <td>
+      <span id="bcc_loading_img" class="loadingImg" style="display:none"></span>
+      <div class="hordeACBox impACBox"><ul class="hordeACList impACList"><li><input autocomplete="off" class="hordeACTrigger impACTrigger" style="width: 80px;"></li></ul><textarea cols="75" id="bcc" name="bcc" rows="1" style="display: none;"></textarea></div>     </td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+      <span id="togglecc">Add Cc</span>
+      <span id="togglebcc">Add Bcc</span>
+     </td>
+    </tr>
+    <tr>
+     <td class="label">Subject:</td>
+     <td class="subject">
+      <input id="subject" name="subject" value="Re: Absence Oral" type="text">     </td>
+    </tr>
+    <tr class="atcrow">
+     <td class="label">
+      <span class="iconImg attachmentImg"></span>:
+     </td>
+     <td>
+      <div id="atcdrop" style="display:none">
+       Drop file(s) here to attach.      </div>
+      <div id="atcdiv">
+       <span id="upload_limit" style="display:none">The attachment limit has been reached.</span>
+       <span id="upload_wait" style="display:none"></span>
+       <span>
+        <label id="compose_upload_add" for="upload">Add Attachment</label>
+        <input id="upload" multiple="" name="file_upload[]" type="file"><span class="horde-popdown" id="anonymous_element_1"></span>       </span>
+       <ul id="attach_list" style="display:none"></ul>
+      </div>
+     </td>
+    </tr>
+    <tr id="noticerow" style="display:none">
+     <td colspan="2">
+      <ul class="notices">
+       <li id="replyallnotice" style="display:none">
+        You are <span class="replyAllNoticeUnderline">replying to ALL</span> (<span class="replyAllNoticeCount"></span>).
+        <input id="replyall_revert" class="button" value="Reply To Sender instead" type="button">
+       </li>
+       <li id="replylistnotice" style="display:none">
+        You are replying to a mailing list<span class="replyListNoticeId"></span>.
+        <input id="replylist_revert" class="button" value="Reply To Sender instead" type="button">
+       </li>
+       <li id="fwdattachnotice" style="display:none">
+        Click this box to add the original message text to the body.       </li>
+       <li id="fwdbodynotice" style="display:none">
+        Click this box to add the original message as an attachment.       </li>
+       <li id="identitychecknotice" style="display:none">
+        Your identity has been switched to the identity associated with 
+the current recipient address. Click this box to revert to the original 
+identity. The identity will not be checked again during this compose 
+action.       </li>
+       <li id="langnotice" style="display:none">
+        The recipient has indicated that they prefer replies in these languages: <span class="langNoticeList"></span>.
+       </li>
+      </ul>
+     </td>
+    </tr>
+   </tbody></table>
+  </div>
+
+  <div id="composeMessageParent">
+   <textarea name="message" id="composeMessage" class="fixed" style="height: 547px;">Bonjour,
+Génial ! je vous remercie grandement.
+
+Cordialement,
+Jordan Sandri.
+Quoting Nicolas Marie-Magdelaine &lt;nicolas.marie-magdelaine@u-bordeaux.fr&gt;:
+
+&gt; J’en ai discuté, ta note sera celle du groupe.
+&gt;
+&gt;
+&gt;&gt; Le 20 mai 2019 à 13:50, Sandri Jordan 
+&gt;&gt; &lt;Jordan.Sandri@bordeaux-inp.fr&gt; a écrit :
+&gt;&gt;
+&gt;&gt; Bonjour,
+&gt;&gt; Je n'ai malheureusement vu que ce changement hier soir en regardant
+&gt;&gt; l'emploi du temps et si vous l'aviez énoncé la semaine dernière j'en
+&gt;&gt; suis profondément désolé je devais certainement être très concentré à
+&gt;&gt; coder ou écrire du rapport. De plus, avec les problèmes de l'emploi du
+&gt;&gt; temps, ça facilite moins son visionnage. Y-a t'il une solution ?
+&gt;&gt; Pouvons nous peut-être en discuter de vive voix ?
+&gt;&gt;
+&gt;&gt; Cordialement,
+&gt;&gt; Jordan Sandri.
+&gt;&gt;
+&gt;&gt;
+&gt;&gt; Nicolas Marie-Magdelaine &lt;nicolas.marie-magdelaine@u-bordeaux.fr&gt; a écrit :
+&gt;&gt;
+&gt;&gt; &gt; Bonjour,
+&gt;&gt; &gt;
+&gt;&gt; &gt; Comme discuté et annoncé lors du cours précédent (le 17 mai) avec le
+&gt;&gt; &gt; reste du groupe, il s’agit de la soutenance finale du projet où la
+&gt;&gt; &gt; note sera fixée. Il s’agit donc d’un examen et la note est fixée
+&gt;&gt; &gt; pour le groupe. Pourquoi n’en n’avons pas discuté la semaine
+&gt;&gt; &gt; dernière ?
+&gt;&gt; &gt;
+&gt;&gt; &gt; Cordialement,
+&gt;&gt; &gt; Nicolas Marie-Magdelaine
+&gt;&gt; &gt;
+&gt;&gt; &gt;
+&gt;&gt; &gt;
+&gt;&gt; &gt;&gt; Le 20 mai 2019 à 00:43, Sandri Jordan
+&gt;&gt; &gt;&gt; &lt;Jordan.Sandri@bordeaux-inp.fr&gt; a écrit :
+&gt;&gt; &gt;&gt;
+&gt;&gt; &gt;&gt; Bonsoir,
+&gt;&gt; &gt;&gt; En regardant l'emploi du temps, je viens de me rendre compte que
+&gt;&gt; &gt;&gt; l'oral du mardi 21 mai vient de passer vendredi 24 mai.
+&gt;&gt; &gt;&gt; Malheureusement, il y a déjà plusieurs semaines que j'ai pris mes
+&gt;&gt; &gt;&gt; billets de train et une chambre d'hôtel pour aller voir de la famille
+&gt;&gt; &gt;&gt; vendredi. Existerait-il une solution ? Peut-être déplacer l'oral ? Ma
+&gt;&gt; &gt;&gt; présence est-elle obligatoire ? Dans le pire des cas s'il n'en existe
+&gt;&gt; &gt;&gt; pas je serai contraint d'annuler mes réservations mais à un coût qui
+&gt;&gt; &gt;&gt; serait regrétable.
+&gt;&gt; &gt;&gt;
+&gt;&gt; &gt;&gt; Merci de votre compréhension.
+&gt;&gt; &gt;&gt; Cordialement,
+&gt;&gt; &gt;&gt; Jordan Sandri.
+&gt;&gt;
+&gt;&gt;
+
+</textarea>
+  </div>
+
+ </div>
+</form>
+</div>
+  <script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/prototype.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/horde.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/hordecore.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/dimpcore.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/viewport_utils.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/contextsensitive.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/imple.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/keynavlist.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/effects.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/compose-base.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/imageupload.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/imagepoll.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/compose-dimp.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/draghandler.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/editor.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/imp.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/autocomplete.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/liquidmetal.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/prettyautocomplete.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/base64.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/accesskeys.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/popup.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/growler.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/sound.js"></script><script type="text/javascript" src="Mail%20::%20Reply:%20Re:%20Absence%20Oral_fichiers/ckeditor_basic.js"></script>  <script type="text/javascript">//<![CDATA[
+HordeCore.conf={"URI_AJAX":"\/services\/ajax.php\/imp\/","URI_DLOAD":"\/services\/download\/?app=imp","URI_LOGOUT":"\/login.php?horde_logout_token=0aj45S1OTh5hgjn9qq1-VQ1&logout_reason=4","URI_SNOOZE":"https:\/\/webmail.enseirb-matmeca.fr\/services\/snooze.php","TOKEN":"0aj45S1OTh5hgjn9qq1-VQ1","popup_height":610,"popup_width":820};HordeCore.text={"ajax_error":"Error
+ when communicating with the server.","ajax_recover":"The connection to 
+the server has been restored.","ajax_timeout":"There has been no contact
+ with the server for several minutes. The server may be temporarily 
+unavailable or network problems may be interrupting your session. You 
+will not see any updates until the connection is 
+restored.","snooze":"You can snooze it for #{time} or #{dismiss_start} 
+dismiss #{dismiss_end} it 
+entirely","snooze_select":{"0":"Select...","5":"5 minutes","15":"15 
+minutes","60":"1 hour","360":"6 hours","1440":"1 day"},"dismissed":"The 
+alarm was 
+dismissed."};DimpCore.conf={"MAX_FILE_SIZE":2097152,"URI_COMPOSE":"\/imp\/dynamic.php?page=compose","URI_VIEW":"\/imp\/view.php?view_token=0aj45S1OTh5hgjn9qq1-VQ1","pref_prefix":"b4f22ea6","compose_cursor":"top","rte_avail":1,"templates_mbox":"VGVtcGxhdGVz","auto_save_interval_val":5,"close_draft":1,"drafts_mbox":"RHJhZnRz","URI_ABOOK":"\/imp\/basic.php?page=contacts&u=4399418775ce2bd8cdfb62","priority":[{"l":"High","v":"high"},{"l":"Normal","s":true,"v":"normal"},{"l":"Low","v":"low"}]};DimpCore.context={"ctx_contacts":{"_sub1":{},"new":"New
+ Message","add":"Add to Address Book","copy":"Copy to 
+Clipboard","addfilter":"Create Filter"},"ctx_reply":{"reply":"To 
+Sender","reply_all":"To All","reply_list":"To 
+List"},"ctx_forward":{"attach":"As Attachment","body":"In Body 
+Text","both":"Attachment and Body Text","_sep1":null,"editasnew":"Edit 
+as New","_sep2":null,"redirect":"Redirect"},"ctx_other":{"rr":"Read 
+Receipt"},"ctx_atc":{"save":"Save Attachments in Sent 
+Mailbox","vcard":"Attach contact 
+information"},"ctx_atcfile":{"delete":"Delete"}};DimpCore.text={"allparts_label":"Parts","emailcopy":"Your
+ browser security settings don't permit direct access to the 
+clipboard.\nYou need to either use the keyboard (Ctrl\/Cmd + C) or right
+ click on the selected address to access the Copy 
+command.","loading":"Loading...","strip_warn":"Are you sure you wish to 
+PERMANENTLY delete this 
+attachment?","verify":"Verifying...","change_identity":"You have edited 
+your signature. Change the identity and lose your 
+changes?","compose_cancel":"Cancelling this message will permanently 
+discard its contents and will delete auto-saved drafts.\nAre you sure 
+you want to do this?","compose_close":"Compose action completed. You may
+ now safely close this window.","dragdropimg_error":"Could not add %d 
+file(s) to message: only images are supported.","multiple_atc":"%d 
+Attachments","nosubject":"The message does not have a subject 
+entered.\nSend message without a subject?","paste_error":"Could not 
+paste image as the clipboard data is invalid.","replyall":"%d 
+recipients","spell_noerror":"No spelling errors 
+found.","toggle_html":"Discard all text formatting information (by 
+converting from HTML to plain text)? This conversion cannot be 
+reversed.","uploading":"Uploading..."};IMP_Ckeditor_Imagepoll.related_attr="imp_related_attr";HordeImple.AutoCompleter={};ImpComposeBase.identities=[{"sm_name":"U2VudA","sm_save":true,"sm_display":"Sent","bcc":""}];window.IMP
+ = window.IMP || {};IMP.ckeditor_config = {enterMode: 2,shiftEnterMode: 
+1,customConfig: "",resize_enabled: false,scayt_autoStartup: 
+false,entities: false,language: "en_us",contentsCss: "body { 
+font-family: Arial; font-size: 14px; }",font_defaultLabel: 
+"Arial",fontSize_defaultLabel: "14px",toolbar: 
+[['Bold','Italic','Underline'],['Font','FontSize'],['TextColor','BGColor'],['Cut','Copy','Paste'],['Undo','Redo'],['Link','Unlink'],['Image','Table','Smiley','SpecialChar']]};DimpCompose.onload_show={"body":"Quoting
+ Nicolas Marie-Magdelaine <nicolas.marie-magdelaine@u-bordeaux.fr>:\n\n>
+ J\u2019en ai discut\u00e9, ta note sera celle du groupe.\n>\n>\n>> Le 
+20 mai 2019 \u00e0 13:50, Sandri Jordan \n>> 
+<Jordan.Sandri@bordeaux-inp.fr> a \u00e9crit :\n>>\n>> Bonjour,\n>> Je 
+n'ai malheureusement vu que ce changement hier soir en regardant\n>> 
+l'emploi du temps et si vous l'aviez \u00e9nonc\u00e9 la semaine 
+derni\u00e8re j'en\n>> suis profond\u00e9ment d\u00e9sol\u00e9 je devais
+ certainement \u00eatre tr\u00e8s concentr\u00e9 \u00e0\n>> coder ou 
+\u00e9crire du rapport. De plus, avec les probl\u00e8mes de l'emploi 
+du\n>> temps, \u00e7a facilite moins son visionnage. Y-a t'il une 
+solution ?\n>> Pouvons nous peut-\u00eatre en discuter de vive voix 
+?\n>>\n>> Cordialement,\n>> Jordan Sandri.\n>>\n>>\n>> Nicolas 
+Marie-Magdelaine <nicolas.marie-magdelaine@u-bordeaux.fr> a \u00e9crit 
+:\n>>\n>> > Bonjour,\n>> >\n>> > Comme discut\u00e9 et annonc\u00e9 lors
+ du cours pr\u00e9c\u00e9dent (le 17 mai) avec le\n>> > reste du groupe,
+ il s\u2019agit de la soutenance finale du projet o\u00f9 la\n>> > note 
+sera fix\u00e9e. Il s\u2019agit donc d\u2019un examen et la note est 
+fix\u00e9e\n>> > pour le groupe. Pourquoi n\u2019en n\u2019avons pas 
+discut\u00e9 la semaine\n>> > derni\u00e8re ?\n>> >\n>> > 
+Cordialement,\n>> > Nicolas Marie-Magdelaine\n>> >\n>> >\n>> >\n>> >> Le
+ 20 mai 2019 \u00e0 00:43, Sandri Jordan\n>> >> 
+<Jordan.Sandri@bordeaux-inp.fr> a \u00e9crit :\n>> >>\n>> >> 
+Bonsoir,\n>> >> En regardant l'emploi du temps, je viens de me rendre 
+compte que\n>> >> l'oral du mardi 21 mai vient de passer vendredi 24 
+mai.\n>> >> Malheureusement, il y a d\u00e9j\u00e0 plusieurs semaines 
+que j'ai pris mes\n>> >> billets de train et une chambre d'h\u00f4tel 
+pour aller voir de la famille\n>> >> vendredi. Existerait-il une 
+solution ? Peut-\u00eatre d\u00e9placer l'oral ? Ma\n>> >> pr\u00e9sence
+ est-elle obligatoire ? Dans le pire des cas s'il n'en existe\n>> >> pas
+ je serai contraint d'annuler mes r\u00e9servations mais \u00e0 un 
+co\u00fbt qui\n>> >> serait regr\u00e9table.\n>> >>\n>> >> Merci de 
+votre compr\u00e9hension.\n>> >> Cordialement,\n>> >> Jordan 
+Sandri.\n>>\n>>\n\n","opts":{"auto":"reply","focus":"composeMessage"},"subject":"Re:
+ Absence Oral","type":"reply_auto","addr":{"to":["Nicolas 
+Marie-Magdelaine 
+<nicolas.marie-magdelaine@u-bordeaux.fr>"],"cc":[],"bcc":[]},"format":"text","identity":0};DimpCompose.tasks={"imp:compose":{"cacheid":"fCt2rnxhAmB3i2xW56UtNw2","hmac":"c28754ec"}};HordePopup.popup_block_text="A
+ popup window could not be opened. Your browser may be blocking 
+popups.";HordeCore.jsfiles=["\/js\/prototype.js?v=be5cf1c9","\/js\/horde.js?v=be5cf1c9","\/js\/hordecore.js?v=be5cf1c9","\/imp\/js\/dimpcore.js?v=78c7e583","\/imp\/js\/viewport_utils.js?v=78c7e583","\/js\/contextsensitive.js?v=be5cf1c9","\/js\/imple.js?v=be5cf1c9","\/js\/keynavlist.js?v=be5cf1c9","\/js\/scriptaculous\/effects.js?v=be5cf1c9","\/imp\/js\/compose-base.js?v=78c7e583","\/imp\/js\/ckeditor\/imageupload.js?v=78c7e583","\/imp\/js\/ckeditor\/imagepoll.js?v=78c7e583","\/imp\/js\/compose-dimp.js?v=78c7e583","\/imp\/js\/draghandler.js?v=78c7e583","\/imp\/js\/editor.js?v=78c7e583","\/imp\/js\/imp.js?v=78c7e583","\/js\/autocomplete.js?v=be5cf1c9","\/js\/liquidmetal.js?v=be5cf1c9","\/imp\/js\/prettyautocomplete.js?v=78c7e583","\/imp\/js\/external\/base64.js?v=78c7e583","\/js\/accesskeys.js?v=be5cf1c9","\/js\/popup.js?v=be5cf1c9","\/js\/growler.js?v=be5cf1c9","\/js\/scriptaculous\/sound.js?v=be5cf1c9","\/js\/ckeditor\/ckeditor_basic.js"];document.observe("dom:loaded",function(){if
+ (window.CKEDITOR) { CKEDITOR.on("loaded", function(e) 
+{CKEDITOR.plugins.addExternal("pasteattachment", 
+"/imp/js/ckeditor/pasteattachment.js", 
+"");CKEDITOR.config.filebrowserImageUploadUrl = 
+"/services/ajax.php/imp/addAttachmentCkeditor";}); 
+};HordeImple.AutoCompleter["to"]=new 
+IMP_PrettyAutocompleter("to",{tokens:[","],boxClass:"hordeACBox 
+impACBox",boxClassFocus:"impACBoxFocus",deleteIcon:"\/imp\/themes\/default\/graphics\/delete-small.png",displayFilter:new
+ Function("t", "return t.sub(/<[^>]*>$/, 
+\"\").strip().escapeHTML()"),growingInputClass:"hordeACTrigger 
+impACTrigger",listClass:"hordeACList 
+impACList",processValueCallback:ImpComposeBase.autocompleteValue.bind(ImpComposeBase),removeClass:"hordeACItemRemove
+ 
+impACItemRemove",triggerContainer:"ZcKzlzUkmVZ1LGOItAU3mQ8",onSelect:function
+ (v) { return v + ", "; },onType:function (e) { return e.include("<") ? 
+"" : e; 
+},minChars:3,trigger:"to",uri:"\/services\/ajax.php\/horde\/imple?token=0aj45S1OTh5hgjn9qq1-VQ1&app=imp&imple=IMP_Ajax_Imple_ContactAutoCompleter&input=to",indicator:"to_loading_img"});HordeImple.AutoCompleter["cc"]=new
+ IMP_PrettyAutocompleter("cc",{tokens:[","],boxClass:"hordeACBox 
+impACBox",boxClassFocus:"impACBoxFocus",deleteIcon:"\/imp\/themes\/default\/graphics\/delete-small.png",displayFilter:new
+ Function("t", "return t.sub(/<[^>]*>$/, 
+\"\").strip().escapeHTML()"),growingInputClass:"hordeACTrigger 
+impACTrigger",listClass:"hordeACList 
+impACList",processValueCallback:ImpComposeBase.autocompleteValue.bind(ImpComposeBase),removeClass:"hordeACItemRemove
+ 
+impACItemRemove",triggerContainer:"pcS4Umh8IiiEuu5_wWGo4Q2",onSelect:function
+ (v) { return v + ", "; },onType:function (e) { return e.include("<") ? 
+"" : e; 
+},minChars:3,trigger:"cc",uri:"\/services\/ajax.php\/horde\/imple?token=0aj45S1OTh5hgjn9qq1-VQ1&app=imp&imple=IMP_Ajax_Imple_ContactAutoCompleter&input=cc",indicator:"cc_loading_img"});HordeImple.AutoCompleter["bcc"]=new
+ IMP_PrettyAutocompleter("bcc",{tokens:[","],boxClass:"hordeACBox 
+impACBox",boxClassFocus:"impACBoxFocus",deleteIcon:"\/imp\/themes\/default\/graphics\/delete-small.png",displayFilter:new
+ Function("t", "return t.sub(/<[^>]*>$/, 
+\"\").strip().escapeHTML()"),growingInputClass:"hordeACTrigger 
+impACTrigger",listClass:"hordeACList 
+impACList",processValueCallback:ImpComposeBase.autocompleteValue.bind(ImpComposeBase),removeClass:"hordeACItemRemove
+ 
+impACItemRemove",triggerContainer:"vdfHT_CdAxgLt-MabX0Nug9",onSelect:function
+ (v) { return v + ", "; },onType:function (e) { return e.include("<") ? 
+"" : e; 
+},minChars:3,trigger:"bcc",uri:"\/services\/ajax.php\/horde\/imple?token=0aj45S1OTh5hgjn9qq1-VQ1&app=imp&imple=IMP_Ajax_Imple_ContactAutoCompleter&input=bcc",indicator:"bcc_loading_img"});});
+//]]></script>
+   
+
+<div id="Growler" style="position: fixed; padding: 10px; z-index: 50000; display: none; bottom: 0px; right: 0px;"></div><iframe name="submit_frame" src="javascript:false" style="display: none;"></iframe><div class="KeyNavList" style="display: none;"><ul><li>High</li><li class="selected">Normal</li><li>Low</li></ul></div></body></html>

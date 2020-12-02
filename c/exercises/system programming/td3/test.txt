@@ -1,0 +1,2 @@
+sortie: test
+commande: ./segfault
